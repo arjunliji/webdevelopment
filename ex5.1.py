@@ -1,8 +1,8 @@
 num = 0
 total = 0.0
-while True :
+while True:
     sval = input('Enter a number: ')
-    if sval == 'done' :
+    if sval == 'done' or sval = '':
         break
     try:
         fval = float(sval)
@@ -10,9 +10,9 @@ while True :
         print('invalid input')
         continue
     print(fval)
-    num=num+1
-    total=total+fval
+    num += 1
+    total += fval
 
 print('all done')
-print(total,num,(total/num))
+print(total, num, (total/num))
 
